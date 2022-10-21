@@ -1,0 +1,46 @@
+package Biodata;
+
+import javax.swing.JOptionPane;
+
+public class Latihan03 {
+
+	public static void main(String[] args) {
+		Biodata bio = new Biodata();
+		
+		JOptionPane.showMessageDialog(null, "Selamat Datang!");
+		String WARNING = "PERINGATAN!";
+		
+		String nama = JOptionPane.showInputDialog(null, "Masukkan nama lengkap Anda:", "Form Nama", JOptionPane.QUESTION_MESSAGE);
+		
+		if(nama.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Field Form Nama tidak boleh kosong!", WARNING, JOptionPane.WARNING_MESSAGE);
+			System.exit(0);
+		}
+		
+		
+		String usia = JOptionPane.showInputDialog(null, "Masukkan usia Anda:", "Form Usia", JOptionPane.QUESTION_MESSAGE);
+		final String REG_NUMERIK = "[0-9]+";
+		
+		if(usia.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Field Form Usia tidak boleh kosong!", WARNING, JOptionPane.WARNING_MESSAGE);
+		} else if(!usia.matches(REG_NUMERIK)) {
+			JOptionPane.showMessageDialog(null, "Isian Form Usia harus numerik!", WARNING, JOptionPane.WARNING_MESSAGE);
+		}
+		
+		
+		String alamat = JOptionPane.showInputDialog(null, "Masukkan alamat Anda:", "Form Alamat", JOptionPane.QUESTION_MESSAGE);
+		
+		if(alamat.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Field Form Alamat tidak boleh kosong!", WARNING, JOptionPane.WARNING_MESSAGE);
+		} else if(alamat.length() < 10) {
+			JOptionPane.showMessageDialog(null, "Masukkan alamat minimum 10 karakter!", WARNING, JOptionPane.WARNING_MESSAGE);
+		}
+		
+		int Umur = Integer.parseInt(usia);
+		
+		bio.setData(nama, Umur
+				, alamat);
+		bio.getData();
+	}
+	
+}
