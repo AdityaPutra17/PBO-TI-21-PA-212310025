@@ -42,8 +42,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `password`, `fullname`, `phone`, `gender`, `citizenship`) VALUES
-(1, 'nagasa.anandes@gmail.com', '212310048', 'Admin', '089520016544', 'M', 'Indonesia'),
-(2, '212310048@student.ibik.ac.id', '202310048', 'Nagasa Anandes', '083819601297', 'M', 'Indonesia'),
+(1, 'Aditya.Putra', '212310025', 'Admin', '08123731814', 'M', 'Indonesia'),
+(2, '212310025@student.ibik.ac.id', '202310025', 'Aditya Putra', '083808282737', 'M', 'Indonesia'),
 (3, 'user@mail.com', 'user', 'user', '000', 'F', 'Indonesia');
 
 -- --------------------------------------------------------
@@ -69,7 +69,7 @@ INSERT INTO `students` (`id`, `npm`, `fullname`, `score`) VALUES
 (3, '212310017', 'Muhammad Alfan', 'C'),
 (4, '212310006', 'Mahesa Alghifari', 'B'),
 (5, '212310015', 'Dyas Tri Apriliansyah', 'B'),
-(6, '212310025', 'Aditya Putra', 'D'),
+(6, '212310025', 'Aditya Putra', 'A'),
 (7, '212310043', 'M. Angga Parulian Harahap', 'E'),
 (8, '212310048', 'Nagasa Anandes Putra Ramadhan', 'D'),
 (9, '69696969', 'TEST', 'F');
